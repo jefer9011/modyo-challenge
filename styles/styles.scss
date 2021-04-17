@@ -1,0 +1,11 @@
+/* sass --watch styles/main.scss styles/ main.css  */
+
+//Typography
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "../assets/fonts/flaticon/font/flaticon";
+
+
+//Web Components
+@import "./components/home/home.scss";
+@import "./components/header/header.scss";
+@import "./components/footer/footer.scss";

@@ -1,0 +1,87 @@
+/* sass --watch styles/main.scss styles/ main.css  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+/*
+Flaticon icon font: Flaticon
+Creation date: 11/02/2019 11:47
+*/
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"), url("./Flaticon.woff2") format("woff2"), url("./Flaticon.woff") format("woff"), url("./Flaticon.ttf") format("truetype"), url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg"); } }
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.flaticon-mexican-taco:before {
+  content: "\f100"; }
+
+.flaticon-house:before {
+  content: "\f101"; }
+
+.flaticon-guitar:before {
+  content: "\f102"; }
+
+.flaticon-gym:before {
+  content: "\f103"; }
+
+.flaticon-shopping-bag:before {
+  content: "\f104"; }
+
+.flaticon-cocktail:before {
+  content: "\f105"; }
+
+.header {
+  display: block;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border-bottom: 3px solid #f9f9f9; }
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  width: 100%;
+  max-width: 1366px; }
+  .nav__list {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly; }
+    .nav__list__item {
+      display: block;
+      cursor: pointer; }
+      .nav__list__item .link {
+        display: flex;
+        color: #242425;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        z-index: 10;
+        border-bottom: 1px solid white; }
+        .nav__list__item .link:hover {
+          color: #37d5b7;
+          border-bottom: 1px solid #37d5b7; }
+      .nav__list__item .last {
+        color: #37d5b7; }
+
+.footer {
+  background-color: red; }
+
+/*# sourceMappingURL=styles.css.map */
