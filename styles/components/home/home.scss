@@ -79,12 +79,12 @@
     padding-bottom: 3rem;
 
     &__title {
-      font-size: 30px;
+      font-size: 36px;
     }
 
     &__wrapper {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: wrap;
 
       &__card {
@@ -94,10 +94,14 @@
         margin: 1rem;
         border-radius: 4px;
         transition: all 0.3s ease-in-out;
-        -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.02);
+        -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.02);
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.02);
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.03);
 
+        }
         img {
           width: 45px;
           display: flex;
@@ -120,7 +124,7 @@
 
         .linkCard {
           color: #38dbc1;
-          width: a;
+          width: 120px;
           font-size: 20px;
           font-weight: 600;
           text-decoration: none;
@@ -152,7 +156,7 @@
           margin:auto;
           padding-right: 3rem;
           &__title {
-              font-size: 35px;
+              font-size: 36px;
               font-weight: 700;
               margin:0;
           }
@@ -201,6 +205,205 @@
           }
       }
   }
+
+  // styles aboutUs
+  .aboutUs {
+      background: #f6f6f6;
+      text-align: center;
+      padding-top: 7rem;
+      padding-bottom: 3rem;
+      display: flex;
+      position: relative;
+      &__title {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 2rem;
+          font-size: 36px;
+          margin: 0;
+      }
+      &__image {
+          display: flex;
+          width: 60%;
+          img {
+              width: 500px;
+              margin: auto;
+              border-radius: 8px;
+              -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+              -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+          }
+      }
+
+      &__text {
+          width: 40%;
+          align-items: center;
+          margin: auto;
+          padding-right: 3rem;
+          h2 {
+              font-size: 36px;
+              font-weight: 400;
+              text-align: left;
+          }
+          p {
+              color: #8a8a8a;
+              text-align: left;
+              line-height: 36px;
+          }
+          button {
+              width: 165px;
+              height: 50px;
+              color: #fff;
+              background: #36d3b5;
+              left: 0;
+              display: block;
+              border-radius: 50px;
+              border: 2px solid #fff;
+              transition: all .3s ease-in-out;
+              cursor: pointer;
+              outline: none;
+              &:hover {
+                  border: 2px solid #36d3b5;
+                  background: #fff;
+                  color: #36d3b5;
+              }
+
+          }
+      }
+  }
+
+  // styles testimonials
+  .testimonials {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 3rem;
+      
+      &__slide {
+          width: 100%;
+          margin: 0 auto;
+
+          &__item {
+              width: 70%;
+              margin: 0 auto;
+
+              img {
+                  width: 100px;
+                  border-radius: 100%;
+                  box-shadow: 0px 0px 10px 0px #000000;
+
+              }
+          }
+      }
+      h2 {
+          font-size: 36px;
+          font-weight: 700;
+      }
+      p {
+        color: #888888;
+        line-height: 35px;
+        width: 57%;
+        text-align: center;
+        margin: 0 auto;
+        justify-content: end;
+        padding-top: 2rem;
+        font-style: italic;
+      }
+
+      p#name {
+          color: #000;
+          font-style: normal;
+          font-weight: 500;
+      }
+
+
+  }
+
+  // styles contact form
+  .contact {
+      background: #f6f6f6;
+      padding: 3rem;
+      text-align: center;
+      margin:  auto;
+      h2 {
+          font-size: 36px;
+          font-weight: 700;
+      }
+
+      .form {
+          display: flex;
+          width: 50%;
+          margin: 0 auto;
+          background: #fff;
+          padding: 3rem;
+          flex-direction: column;
+          border-radius: 10px;
+          &::before {
+              content: 'Contact Form';
+              font-size: 30px;
+              position: absolute;
+          }
+          .doubleInput {
+              width: 100%;
+              display: flex;
+          }
+          .double {
+            display: flex;
+            margin: 4rem auto;
+            justify-content: center;
+            flex-direction: column;
+            width: 50%;
+            margin-bottom: 1rem;
+            label {
+                text-align: left;
+                color: #3c3c3c;
+                font-size: 18px;
+                margin: 1rem 0;
+            }
+            input {
+                width: 90%;
+                height: 50px;
+                border: 1px solid #e8eaed;
+                outline: none;
+                font-size: 19px;
+                color: #858a91;
+                text-align: center;
+            }
+          }
+
+          .single {
+              display: inline-grid;
+            label {
+                text-align: left;
+                color: #3c3c3c;
+                font-size: 18px;
+                margin: 1rem 0;
+            }
+            input {
+                width: 90%;
+                height: 50px;
+                border: 1px solid #e8eaed;
+                outline: none;
+                font-size: 19px;
+                color: #858a91;
+                text-align: center;
+            }
+            textarea {
+                font-family: "Montserrat", sans-serif;
+                width: 90%;
+                height: 50px;
+                border: 1px solid #e8eaed;
+                outline: none;
+                font-size: 16px;
+                color: #858a91;
+                text-align: left;
+                padding-left: 1rem;
+                padding-top: 1rem; 
+            }
+          }
+      }
+  }
+  // Styles tiny slider
   .tns-outer {
     display: flex;
     position: relative;
@@ -224,11 +427,12 @@
         font-size: 0px;
         z-index: 99;
         border-radius: 50%;
-        background-color: #36d3b5;
+        background-color: transparent;
         color: #1d1d1d;
         margin-top: 2rem;
         transition: all 0.3s ease-in-out;
-        border: none;
+        border: 1px solid #36d3b5;
+
         &:hover {
           filter: brightness(1.1);
         }
@@ -242,13 +446,13 @@
         font-size: 0;
         z-index: 99;
         border-radius: 50%;
-        background-color: #36d3b5;
+        background-color: transparent;
         color: #1d1d1d;
         top: 50%;
         transform: scaleX(1);
         margin-top: 2rem;
         transition: all 0.3s ease-in-out;
-        border: none;
+        border: 1px solid #36d3b5;
         &:hover {
           filter: brightness(1.1);
         }
@@ -257,7 +461,7 @@
         content: "<";
         font-family: "Poppins";
         font-size: 35px;
-        color: #fff;
+        color: #36d3b5;
         font-weight: 700;
         transition: all 0.3s ease-in-out;
       }
@@ -265,7 +469,7 @@
         content: ">";
         font-family: "Poppins";
         font-size: 35px;
-        color: #fff;
+        color: #36d3b5;
         font-weight: 700;
       }
     }
@@ -290,9 +494,6 @@
         outline: none;
         margin: 0 1rem;
         border: 1px solid #36d3b5;
-        &:hover {
-          height: 3px;
-        }
 
         @media (max-width: 600px) {
           width: 42px;
@@ -311,6 +512,29 @@
           height: 3px;
         }
       }
+    }
+  }
+  .testimonials  {
+    .tns-controls {
+        display: none;
+    }
+    .tns-nav {
+        bottom: -2rem;
+        button {
+          width: 15px;
+          height: 15px ;
+          border-radius: 100%;
+          background-color: #dee2e6;
+          border: 1px solid #dee2e6;
+
+        }
+        button.tns-nav-active {
+          width: 15px;
+          height: 15px;
+          border-radius: 100px;
+          background-color: #36d3b5;
+          border: 1px solid #36d3b5;
+        }
     }
   }
 }

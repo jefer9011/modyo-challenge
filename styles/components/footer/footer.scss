@@ -1,5 +1,19 @@
 
 
 .footer {
-    background-color: red;
+    background-color: #fff;
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    height: 200px;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    p {
+        color: #818181;
+        position: absolute;
+        bottom: 2rem;
+    }
 }
