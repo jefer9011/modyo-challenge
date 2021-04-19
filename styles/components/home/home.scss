@@ -1,3 +1,5 @@
+
+
 .home {
   display: block;
   font-family: "Montserrat", sans-serif;
@@ -541,12 +543,11 @@
   // mobile Styles
   @media only screen and (max-width: 600px) {
 
-    .header {
-      display: none;
-    }
+   
     .title {
       padding-left: 1rem;
       text-align: left;
+      font-weight: 500;
     }
 
     .slider__item {
@@ -560,7 +561,7 @@
         padding:0;
         order: 2;
         h2 {
-          padding: 1rem;
+          padding: 2rem;
           margin: 0;
         }
         p {
