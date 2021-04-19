@@ -462,6 +462,83 @@ Creation date: 11/02/2019 11:47
       border-radius: 100px;
       background-color: #36d3b5;
       border: 1px solid #36d3b5; }
+  @media only screen and (max-width: 600px) {
+    .home .header {
+      display: none; }
+    .home .title {
+      padding-left: 1rem;
+      text-align: left; }
+    .home .slider__item {
+      display: flex;
+      flex-direction: column; }
+      .home .slider__item__text {
+        width: 100%;
+        margin: 1rem auto;
+        text-align: center;
+        padding: 0;
+        order: 2; }
+        .home .slider__item__text h2 {
+          padding: 1rem;
+          margin: 0; }
+        .home .slider__item__text p {
+          width: 90%;
+          margin: 0 auto; }
+        .home .slider__item__text button {
+          margin-left: 2rem; }
+      .home .slider__item__image {
+        width: 100%;
+        order: 1; }
+        .home .slider__item__image img {
+          width: 100%; }
+    .home .features__wrapper__card {
+      width: 100%; }
+    .home .prototypes {
+      flex-direction: column;
+      padding-top: 2rem; }
+      .home .prototypes__image {
+        width: 100%;
+        order: 2; }
+        .home .prototypes__image img {
+          width: 100%; }
+      .home .prototypes__text {
+        width: 100%; }
+        .home .prototypes__text__title, .home .prototypes__text__label, .home .prototypes__text__li {
+          text-align: center;
+          margin: 0 auto; }
+        .home .prototypes__text__card {
+          width: 80%;
+          margin: 0 auto; }
+    .home .aboutUs {
+      flex-direction: column; }
+      .home .aboutUs__image {
+        width: 100%; }
+        .home .aboutUs__image img {
+          width: 80%; }
+      .home .aboutUs__text {
+        width: 100%;
+        padding: 0; }
+        .home .aboutUs__text__card {
+          width: 90%;
+          margin: 0 auto; }
+    .home .testimonials {
+      padding: 0; }
+      .home .testimonials #description {
+        width: 90%; }
+      .home .testimonials .tns-nav {
+        flex-wrap: wrap; }
+        .home .testimonials .tns-nav button {
+          margin: 4px; }
+    .home .contact {
+      margin: 3rem auto;
+      width: 100%;
+      text-align: center;
+      padding: 0; }
+      .home .contact .form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem; }
+    .home .tns-controls {
+      display: none; } }
 
 .header {
   display: block;
