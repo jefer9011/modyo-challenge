@@ -89,9 +89,6 @@ async function getUserInfo() {
 getUserInfo().then(([userInfo, postInfo]) => {
   userInfo;
   postInfo;
-  /*   console.log('userInfo', userInfo);
-    console.log('postInfo', postInfo); */
-  // userInfoData
   userInfo.forEach(element => {
     let idUser = element.id;
     let html = `
@@ -103,7 +100,6 @@ getUserInfo().then(([userInfo, postInfo]) => {
       `;
     document.querySelector('.testimonials__slide').insertAdjacentHTML('beforeend', html)
   });
-  //userPOstData
   postInfo.forEach(ele => {
     let postData = ele.body;
     let idPost = ele.id
